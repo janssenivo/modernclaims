@@ -24,7 +24,7 @@ main.on('click', 'select', function(e) {
   
   var claimitems = [];
   ajax({ url: 'https://baas.kinvey.com/appdata/kid_WkiTdocbR/CityWatch', type: 'json', 
-         headers: {'Authorization':'Basic a2lkX1draVRkb2NiUjpkNGZjNGNkYjQ0YWQ0OGNmYWM2NGVmNTAzNDUwNDk2Mw=='} },
+         headers: {'Authorization':'Basic <secret here>'} },
          function(data) {
       for (var i = 0, len = data.length; i < len; i++) {
         claimitems.push({title:data[i].category, subtitle:data[i].title, 
